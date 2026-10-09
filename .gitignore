@@ -1,0 +1,13 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler
+Gemfile.lock
+vendor/
+
+# Internal / draft files — never publish
+DRAFT-NOTES.md
+preview/

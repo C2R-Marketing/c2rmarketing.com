@@ -1,0 +1,16 @@
+# C2R Marketing — Jekyll config (GitHub Pages ready, DRAFT)
+title: C2R Marketing
+description: "C2R Marketing is a marketing startup building AI-powered SaaS tools and running modern marketing services."
+url: "https://c2rmarketing.com" # canonical custom domain
+baseurl: ""                     # custom domain => baseurl stays empty
+lang: en
+
+# Keep draft/internal files out of the published site
+exclude:
+  - DRAFT-NOTES.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+markdown: kramdown

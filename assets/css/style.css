@@ -222,6 +222,8 @@ button:focus-visible {
 /* Sections */
 .section { padding: 4.5rem 0; }
 .section-alt { background: var(--bg-alt); }
+/* Keep anchored sections clear of the sticky header (QA fix 2026-10-09) */
+section[id] { scroll-margin-top: 5rem; }
 
 .eyebrow {
   text-transform: uppercase;

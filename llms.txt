@@ -1,0 +1,22 @@
+# C2R Marketing — llms.txt
+
+## About
+C2R Marketing, LLC is the home base for AI visibility audits for churches,
+dentists, and realtors; free guides; books; and tools. Run by Tov Rose.
+
+## What we do
+- AI Visibility Audit ($147 one time): what ChatGPT, Gemini, Perplexity, and
+  Claude say about a business, who they cite instead, and the top five fixes.
+  Written report within five business days.
+  - Churches: https://c2r-marketing.github.io/ai-visibility-audit-churches/
+  - Dentists: https://c2rmarketing.com/audit/
+  - Realtors: https://c2r-marketing.github.io/ai-visibility-audit-realtors/
+- Free guides: the llms.txt guide — https://c2rmarketing.com/guide/llms-txt/
+- Books and digital products: https://c2rmarketing.com/#books
+- The New Messianic Version Bible: https://nmvbible.org/
+- Tov Rose's books and store: https://tovrose.com/
+
+## Contact
+- Email: tov@c2rmarketing.com
+- Address: 10701 College Ave, Kansas City, MO 64137-1742
+- Website: https://c2rmarketing.com/

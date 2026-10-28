@@ -1,139 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>C2R Marketing — AI Software Studio</title>
-  <meta name="description" content="C2R Marketing is an independent software studio building AI-powered products for developers and technical teams. Built on purpose.">
-  <meta property="og:title" content="C2R Marketing">
-  <meta property="og:description" content="An independent software studio building AI-powered products for developers and technical teams.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://c2rmarketing.com/">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232546f4'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3EC2R%3C/text%3E%3C/svg%3E" type="image/svg+xml">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#home" aria-label="C2R Marketing — home">
-        <span class="brand-mark" aria-hidden="true">C2R</span>
-        <span class="brand-name">C2R Marketing</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
-          <span class="sr-only">Menu</span>
-          <span class="hamburger" aria-hidden="true"></span>
-        </button>
-        <ul id="nav-list" class="nav-list">
-          <li><a href="#apps">Products</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a class="btn btn-small" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+<title>C2R Marketing — Find Out What AI Says About Your Business</title>
+<meta name="description" content="C2R Marketing is the home base for AI visibility audits for churches, dentists, and realtors, free guides, books, and tools. One-time $147 audit: what ChatGPT, Gemini, Perplexity, and Claude say about you, who they cite instead, and the five fixes that matter most.">
+<link rel="canonical" href="https://c2rmarketing.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="C2R Marketing">
+<meta property="og:title" content="C2R Marketing — Find Out What AI Says About Your Business">
+<meta property="og:description" content="AI visibility audits for churches, dentists, and realtors. One-time $147 audit, report in five business days. Plus free guides, books, and tools.">
+<meta property="og:url" content="https://c2rmarketing.com/">
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+  @theme {
+    --color-ink: #1a1d21;
+    --color-paper: #faf8f4;
+    --color-accent: #0f6b4f;
+  }
+</style>
+</head>
+
+<body class="bg-paper text-ink font-sans antialiased">
+
+  <!-- Sticky nav -->
+  <nav class="sticky top-0 z-10 border-b border-ink/10 bg-paper/90 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+      <a href="https://c2rmarketing.com/" class="font-semibold">C2R Marketing</a>
+      <div class="flex items-center gap-6 text-sm font-medium">
+        <a href="#audits" class="hidden hover:text-accent sm:inline">Audits</a>
+        <a href="#guides" class="hidden hover:text-accent sm:inline">Free guides</a>
+        <a href="#books" class="hidden hover:text-accent sm:inline">Books</a>
+        <a href="#join" class="hidden hover:text-accent sm:inline">Join the list</a>
+        <a href="/go/audit/" class="rounded-lg bg-accent px-4 py-2 text-white transition hover:opacity-90">Get the audit · $147</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="border-b border-ink/10 bg-accent/10">
+    <div class="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-20 sm:py-28">
+      <h1 class="max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
+        Find out what AI says about your business.
+      </h1>
+      <p class="max-w-xl text-xl leading-relaxed text-ink/70">
+        When someone nearby asks ChatGPT, Gemini, or Perplexity about a church, a dental
+        practice, or a realtor, what does it answer? A one-time audit shows you exactly
+        what the AI engines say, who they cite instead of you, and the five fixes that
+        matter most. Plain English. No fluff.
+      </p>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="/go/audit-churches/" class="rounded-lg bg-accent px-6 py-3 text-center font-medium text-white transition hover:opacity-90">
+          Churches · $147
+        </a>
+        <a href="/go/audit-dentists/" class="rounded-lg bg-accent px-6 py-3 text-center font-medium text-white transition hover:opacity-90">
+          Dentists · $147
+        </a>
+        <a href="/go/audit-realtors/" class="rounded-lg bg-accent px-6 py-3 text-center font-medium text-white transition hover:opacity-90">
+          Realtors · $147
+        </a>
+      </div>
+      <p class="max-w-xl text-sm text-ink/50">
+        One-time purchase. Written report within five business days.
+        <a href="#join" class="underline decoration-ink/25 underline-offset-4 hover:text-accent">Get the free llms.txt guide first</a> — no purchase needed.
+      </p>
     </div>
   </header>
 
-  <main id="main">
-    <!-- ============ HERO ============ -->
-    <section id="home" class="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <p class="eyebrow">An independent software studio</p>
-        <h1 id="hero-title">We build AI-powered software.<br>For developers, by a developer.</h1>
-        <p class="lede">C2R Marketing designs and ships AI-powered products — local-first assistants, automation platforms, and AI influencers. We build in the open where we can, and we keep every status honest: what's live is live, what's in development says so. Built on purpose.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#apps">See the products</a>
-          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+  <!-- Audits -->
+  <section id="audits" class="scroll-mt-20 border-b border-ink/10 bg-paper">
+    <div class="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-16">
+      <h2 class="text-sm font-semibold uppercase tracking-widest text-ink/50">The offer</h2>
+      <h3 class="text-2xl font-bold tracking-tight">AI Visibility Audit — $147 one time</h3>
+      <p class="max-w-xl text-ink/70">
+        We ask ChatGPT, Gemini, Perplexity, and Claude about you and capture exactly what
+        they say, word for word. You see every page they cite, every business they name
+        instead of you, and every fact they get wrong — plus the top five fixes, written
+        so your web person can do them in an afternoon.
+      </p>
+      <div class="grid gap-6 sm:grid-cols-3">
+        <div class="flex flex-col gap-3 rounded-lg border border-ink/10 p-5">
+          <h4 class="font-semibold">For churches &amp; ministries</h4>
+          <p class="text-ink/70">What AI tells someone looking for a church nearby — and who it quotes instead of your ministry.</p>
+          <a href="https://c2r-marketing.github.io/ai-visibility-audit-churches/" class="font-medium text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent">Learn more</a>
+          <a href="/go/audit-churches/" class="mt-1 self-start rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Get the audit · $147</a>
+        </div>
+        <div class="flex flex-col gap-3 rounded-lg border border-ink/10 p-5">
+          <h4 class="font-semibold">For dentists</h4>
+          <p class="text-ink/70">What AI tells a patient looking for a dentist nearby — and which practice it names first.</p>
+          <a href="/audit/" class="font-medium text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent">Learn more</a>
+          <a href="/go/audit-dentists/" class="mt-1 self-start rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Get the audit · $147</a>
+        </div>
+        <div class="flex flex-col gap-3 rounded-lg border border-ink/10 p-5">
+          <h4 class="font-semibold">For realtors</h4>
+          <p class="text-ink/70">What AI tells a homebuyer asking about an agent or a neighborhood — and who it describes instead of you.</p>
+          <a href="https://c2r-marketing.github.io/ai-visibility-audit-realtors/" class="font-medium text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent">Learn more</a>
+          <a href="/go/audit-realtors/" class="mt-1 self-start rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Get the audit · $147</a>
         </div>
       </div>
-    </section>
+      <p class="text-sm text-ink/50">
+        How it works: after checkout, reply to your receipt with your website address.
+        We run the checks and you get the full written report within five business days.
+        Questions first? <a href="mailto:tov@c2rmarketing.com?subject=Question%3A%20AI%20Visibility%20Audit" class="underline decoration-ink/25 underline-offset-4 hover:text-accent">tov@c2rmarketing.com</a>
+      </p>
+    </div>
+  </section>
 
-    <!-- ============ PRODUCTS ============ -->
-    <section id="apps" class="section" aria-labelledby="apps-title">
-      <div class="container">
-        <p class="eyebrow">The portfolio</p>
-        <h2 id="apps-title">Software we're building</h2>
-        <p class="section-intro">Every product below is built in-house. We mark each one honestly — <strong>Live</strong> only when it's actually live.</p>
-        <div class="card-grid">
-          <article class="card">
-            <p class="status"><span class="badge badge-dev">In development</span></p>
-            <h3>GHL Alternative</h3>
-            <p>An open-source alternative to GoHighLevel — CRM, marketing automation, and funnels without the monthly bill. Built for a $0 launch.</p>
-          </article>
-          <article class="card card-flagship">
-            <p class="status"><span class="badge badge-dev">In development</span> <span class="flag">Flagship</span></p>
-            <h3>C2R Agentic Business OS</h3>
-            <p>Our flagship product: a disability-first business platform — an agentic operating system that helps anyone start and run a real business.</p>
-          </article>
-          <article class="card">
-            <p class="status"><span class="badge badge-dev">In development</span></p>
-            <h3>AlmostHuman</h3>
-            <p>A local-first AI assistant that runs on your own machine first. Private by design, helpful by default.</p>
-          </article>
-          <article class="card">
-            <p class="status"><span class="badge badge-dev">In development</span></p>
-            <h3>Tov AI Clone</h3>
-            <p>Tov's digital twin — an AI built on his voice, knowledge, and methods.</p>
-          </article>
-          <article class="card">
-            <p class="status"><span class="badge badge-live">Live</span></p>
-            <h3>AI Video &amp; Voice Hub</h3>
-            <p>Compare AI video and voice tools side by side — find the right one for your next project. Launched October 2026.</p>
-          </article>
-          <article class="card">
-            <p class="status"><span class="badge badge-pre">Prelaunch</span></p>
-            <h3>Nova Prime</h3>
-            <p>Our UAG offering — AI influencers that land brand deals and promote products for businesses of all kinds.</p>
-          </article>
+  <!-- Free guides & tools -->
+  <section id="guides" class="scroll-mt-20 border-b border-ink/10 bg-accent/5">
+    <div class="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-16">
+      <h2 class="text-sm font-semibold uppercase tracking-widest text-ink/50">Free guides &amp; tools</h2>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="flex flex-col gap-3 rounded-lg border border-ink/10 bg-paper p-5">
+          <h3 class="font-semibold">The free llms.txt fix (10 minutes)</h3>
+          <p class="text-ink/70">One plain-text file at yoursite.com/llms.txt that tells AI search engines who you are, what you teach, and when you meet. Without it, AI quotes whoever it can read instead of you. Free, and you can do it today.</p>
+          <a href="/guide/llms-txt/" class="self-start rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Read the free guide</a>
+        </div>
+        <div class="flex flex-col gap-3 rounded-lg border border-ink/10 bg-paper p-5">
+          <h3 class="font-semibold">Choose-your-path grids</h3>
+          <p class="text-ink/70">Nine-box pages that let a visitor pick what they want first — and take them to the matched answer. The grid builder is being built now; this space links to it the day it goes live.</p>
+          <!-- WIRING: grid builder + grids link in here when the video-1 build lands (C2R-Marketing/grid-builder). Job board links in here when the video-2 build lands. Do not ship a link to either before it is live. -->
+          <p class="text-sm text-ink/50">Grids for churches, dentists, realtors, and Bible readers — coming to this page as they go live.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section id="about" class="section section-alt" aria-labelledby="about-title">
-      <div class="container narrow">
-        <p class="eyebrow">About</p>
-        <h2 id="about-title">Built by a builder</h2>
-        <p><strong>Tov Rose</strong> is the founder of C2R Marketing — a software builder, and the founder and president of the New Messianic Version project and foundation.</p>
-        <p>By day he's an employment specialist — that work shapes the disability-first mission behind the products.</p>
-        <p>C2R Marketing is his independent software studio: the company behind a growing portfolio of AI-powered products. Everything here is built on purpose.</p>
-      </div>
-    </section>
-
-    <!-- ============ SERVICES (compact) ============ -->
-    <section id="services" class="section" aria-labelledby="services-title">
-      <div class="container narrow">
-        <p class="eyebrow">Services</p>
-        <h2 id="services-title">Development services</h2>
-        <p class="section-intro">One small, focused offering alongside the products. <em>Service offering in draft — final details on request.</em></p>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Custom AI builds</h3>
-            <p>Scoped automations, integrations, and AI-powered tools — small builds, shipped fast, the same kind of software we make for ourselves.</p>
-          </article>
+  <!-- Books & digital products -->
+  <section id="books" class="scroll-mt-20 border-b border-ink/10 bg-paper">
+    <div class="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-16">
+      <h2 class="text-sm font-semibold uppercase tracking-widest text-ink/50">Books &amp; digital products</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="flex flex-col gap-2 rounded-lg border border-ink/10 p-5">
+          <h3 class="font-semibold">One-Page Website</h3>
+          <p class="text-2xl font-bold">$95 <span class="text-base font-normal text-ink/50">one time</span></p>
+          <p class="text-ink/70">A one-page website, built for you.</p>
+          <a href="/go/one-page-site/" class="mt-2 self-start rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Buy · $95</a>
+        </div>
+        <div class="flex flex-col gap-2 rounded-lg border border-ink/10 p-5">
+          <h3 class="font-semibold">Voice Clone Playbook</h3>
+          <p class="text-2xl font-bold">$12 <span class="text-base font-normal text-ink/50">one time</span></p>
+          <p class="text-ink/70">A playbook for cloning your voice.</p>
+          <a href="/go/voice-playbook/" class="mt-2 self-start rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Buy · $12</a>
+        </div>
+        <div class="flex flex-col gap-2 rounded-lg border border-ink/10 p-5">
+          <h3 class="font-semibold">Messianic Bible Buyer&rsquo;s Guide</h3>
+          <p class="text-2xl font-bold">$14 <span class="text-base font-normal text-ink/50">one time</span></p>
+          <p class="text-ink/70">Which Bible translation should you actually read?</p>
+          <a href="/go/bible-guide/" class="mt-2 self-start rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Buy · $14</a>
+        </div>
+        <div class="flex flex-col gap-2 rounded-lg border border-ink/10 p-5">
+          <h3 class="font-semibold">AI Visibility Playbook</h3>
+          <p class="text-2xl font-bold">$14 <span class="text-base font-normal text-ink/50">one time</span></p>
+          <p class="text-ink/70">Do the AI visibility checks yourself, step by step.</p>
+          <a href="/go/ai-playbook/" class="mt-2 self-start rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Buy · $14</a>
+        </div>
+        <div class="flex flex-col gap-2 rounded-lg border border-ink/10 p-5">
+          <h3 class="font-semibold">Hebrew Words Guide</h3>
+          <p class="text-2xl font-bold">$14 <span class="text-base font-normal text-ink/50">one time</span></p>
+          <p class="text-ink/70">Hebrew words, explained.</p>
+          <a href="/go/hebrew-words/" class="mt-2 self-start rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Buy · $14</a>
+        </div>
+        <div class="flex flex-col gap-2 rounded-lg border border-ink/10 p-5">
+          <h3 class="font-semibold">Jesus: The God of Abraham, Isaac &amp; Jacob</h3>
+          <p class="text-2xl font-bold">Tov Rose</p>
+          <p class="text-ink/70">Tov&rsquo;s book, on his own store.</p>
+          <a href="/go/jesus-book/" class="mt-2 self-start rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Get the book</a>
         </div>
       </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section id="contact" class="section section-alt" aria-labelledby="contact-title">
-      <div class="container narrow text-center">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Let's talk</h2>
-        <p class="section-intro">For product questions, service inquiries, or anything else — email is the fastest way to reach us.</p>
-        <p><a class="btn btn-primary btn-large" href="mailto:tov@c2rmarketing.com">tov@c2rmarketing.com</a></p>
+      <div class="flex flex-col gap-3 rounded-lg border border-ink/10 bg-accent/5 p-5">
+        <h3 class="font-semibold">The New Messianic Version Bible</h3>
+        <p class="text-ink/70">Read the Bible and see Jesus in the Old Testament. The NMV 2nd edition is the legacy project behind this whole site.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/go/nmv/" class="rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Read at nmvbible.org</a>
+          <a href="/go/nmv-amazon/" class="rounded-lg border border-ink/20 px-6 py-3 font-medium transition hover:border-accent hover:text-accent">Buy on Amazon</a>
+          <a href="/go/donate-nmv/" class="rounded-lg border border-ink/20 px-6 py-3 font-medium transition hover:border-accent hover:text-accent">Support the NMV project</a>
+        </div>
       </div>
-    </section>
-  </main>
+      <p class="text-sm text-ink/50">
+        Books and bundles also live on <a href="https://tovrose.com/" class="underline decoration-ink/25 underline-offset-4 hover:text-accent">tovrose.com</a>, Tov&rsquo;s own store.
+      </p>
+    </div>
+  </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 C2R Marketing. Built on purpose.</p>
+  <!-- In the workshop -->
+  <section class="border-b border-ink/10 bg-accent/5">
+    <div class="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-16">
+      <h2 class="text-sm font-semibold uppercase tracking-widest text-ink/50">In the workshop</h2>
+      <p class="max-w-xl text-ink/70">Software we&rsquo;re building. Each one is marked honestly — in development until it is actually live.</p>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="flex flex-col gap-2 rounded-lg border border-ink/10 bg-paper p-5">
+          <p class="text-sm font-semibold text-accent">In development</p>
+          <h3 class="font-semibold">GHL Alternative</h3>
+          <p class="text-ink/70">An open-source alternative to GoHighLevel — CRM, marketing automation, and funnels without the monthly bill.</p>
+        </div>
+        <div class="flex flex-col gap-2 rounded-lg border border-ink/10 bg-paper p-5">
+          <p class="text-sm font-semibold text-accent">In development · Flagship</p>
+          <h3 class="font-semibold">C2R Agentic Business OS</h3>
+          <p class="text-ink/70">A disability-first business platform — an agentic operating system that helps anyone start and run a real business.</p>
+        </div>
+        <div class="flex flex-col gap-2 rounded-lg border border-ink/10 bg-paper p-5">
+          <p class="text-sm font-semibold text-accent">In development</p>
+          <h3 class="font-semibold">AlmostHuman</h3>
+          <p class="text-ink/70">A local-first AI assistant that runs on your own machine first. Private by design, helpful by default.</p>
+        </div>
+        <div class="flex flex-col gap-2 rounded-lg border border-ink/10 bg-paper p-5">
+          <p class="text-sm font-semibold text-accent">In development</p>
+          <h3 class="font-semibold">Tov AI Clone</h3>
+          <p class="text-ink/70">Tov&rsquo;s digital twin — an AI built on his voice, knowledge, and methods.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join the list -->
+  <section id="join" class="scroll-mt-20 border-b border-ink/10 bg-paper">
+    <div class="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-16">
+      <h2 class="text-sm font-semibold uppercase tracking-widest text-ink/50">Join the list</h2>
+      <h3 class="text-2xl font-bold tracking-tight">One email a week, at most.</h3>
+      <p class="max-w-xl text-ink/70">
+        The free llms.txt guide, what AI search engines are saying about businesses like
+        yours, and the offer behind it. No spam, unsubscribe anytime.
+      </p>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7ABTePxCJAtKc6AhHpSeL9cgPD3CuxyRHnztSz8cgPtbABg/viewform" target="_blank" rel="noopener" class="rounded-lg bg-accent px-6 py-3 font-medium text-white transition hover:opacity-90">Join the email list</a>
+        <a href="/thanks/" class="rounded-lg border border-ink/20 px-6 py-3 font-medium transition hover:border-accent hover:text-accent">What happens after you join</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="border-b border-ink/10 bg-accent/5">
+    <div class="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-16">
+      <h2 class="text-sm font-semibold uppercase tracking-widest text-ink/50">Contact</h2>
+      <p class="max-w-xl text-ink/70">Questions before you buy? Email me directly and I will answer. No forms, no mailing list signup, no obligation.</p>
+      <a href="mailto:tov@c2rmarketing.com" class="self-start rounded-lg border border-ink/20 px-6 py-3 font-medium transition hover:border-accent hover:text-accent">tov@c2rmarketing.com</a>
+    </div>
+  </section>
+
+  <footer class="border-t border-ink/10 bg-paper">
+    <div class="mx-auto flex max-w-5xl flex-col gap-2 px-6 py-8 text-sm text-ink/50">
+      <p>C2R Marketing, LLC · 10701 College Ave, Kansas City, MO 64137-1742</p>
+      <p><a href="https://c2rmarketing.com/" class="underline decoration-ink/25 underline-offset-4 hover:text-accent">c2rmarketing.com</a> · <a href="https://tovrose.com/" class="underline decoration-ink/25 underline-offset-4 hover:text-accent">tovrose.com</a> · <a href="https://nmvbible.org/" class="underline decoration-ink/25 underline-offset-4 hover:text-accent">nmvbible.org</a> · © 2026</p>
     </div>
   </footer>
 
-  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

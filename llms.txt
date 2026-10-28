@@ -20,3 +20,10 @@ dentists, and realtors; free guides; books; and tools. Run by Tov Rose.
 - Email: tov@c2rmarketing.com
 - Address: 10701 College Ave, Kansas City, MO 64137-1742
 - Website: https://c2rmarketing.com/
+
+## Job boards
+- Dental jobs — 20 real Kansas City openings, post a job $99 standard / $199 featured: https://c2r-marketing.github.io/dental-jobs/
+- Church jobs — 20 real Kansas City-area openings, post a job $99 standard / $199 featured: https://c2r-marketing.github.io/church-jobs/
+
+## Free tools
+- Grid builder — build your own nine-box choose-your-path page, free: https://c2r-marketing.github.io/grid-builder/

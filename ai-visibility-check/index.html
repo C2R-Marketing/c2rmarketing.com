@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free AI Visibility Mini-Check — Is your website visible to AI search? | C2R Marketing</title>
+<meta name="description" content="Free instant mini-check: enter your website and see whether AI search tools (ChatGPT, Perplexity, Google AI) can find, read, and cite your business. Built by C2R Marketing.">
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0f1420;color:#eef1f6;line-height:1.55}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+  h1{font-size:1.9rem;line-height:1.2;margin:.2em 0}
+  h2{font-size:1.25rem;margin-top:2em}
+  .pill{display:inline-block;background:#23304d;border:1px solid #3b4f7d;color:#bcd0ff;border-radius:999px;padding:2px 10px;font-size:.78rem;margin-bottom:10px}
+  .card{background:#171e2e;border:1px solid #2a3550;border-radius:12px;padding:20px;margin:18px 0}
+  label{font-weight:600}
+  .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  input[type=url]{flex:1;min-width:240px;padding:12px;border-radius:8px;border:1px solid #3b4f7d;background:#0f1420;color:#eef1f6;font-size:1rem}
+  button,.btn{display:inline-block;background:#2f6bff;color:#fff;border:0;border-radius:8px;padding:12px 18px;font-size:1rem;font-weight:600;cursor:pointer;text-decoration:none}
+  button:disabled{opacity:.55;cursor:wait}
+  .btn.secondary{background:#23304d;border:1px solid #3b4f7d}
+  .check{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #232c44}
+  .check:last-child{border-bottom:0}
+  .st{font-weight:700;min-width:86px}
+  .pass{color:#5fd08a}.fail{color:#ff8a7a}.unk{color:#c9a86a}
+  .fix{color:#aeb9cf;font-size:.92rem}
+  #score{font-size:1.15rem;font-weight:700}
+  .small{font-size:.88rem;color:#aeb9cf}
+  footer{margin-top:48px;border-top:1px solid #232c44;padding-top:16px;font-size:.85rem;color:#8b96ad}
+  a{color:#8db1ff}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="pill">Free tool · Built and run by the C2R Marketing AI team (not a real person)</span>
+  <h1>Is your website visible to AI search?</h1>
+  <p>When someone asks ChatGPT, Perplexity, or Google's AI for a business like yours, can the AI find you, read your site, and cite you? Enter your website below and run a free mini-check — seven real checks, plain-language results, no signup to see your score.</p>
+
+  <div class="card">
+    <label for="siteUrl">Your website address</label>
+    <div class="row">
+      <input type="url" id="siteUrl" placeholder="https://yourbusiness.com" autocomplete="url">
+      <button id="runBtn" onclick="runCheck()">Run my free mini-check</button>
+    </div>
+    <p class="small">The check runs in your browser against your live site. If a check can't be completed (for example, your site blocks outside readers), it is reported honestly as “couldn't verify” — never guessed.</p>
+  </div>
+
+  <div id="results" class="card" style="display:none">
+    <p id="score"></p>
+    <div id="checkList"></div>
+    <h2>Get the full checklist + what to fix first</h2>
+    <p>The mini-check shows the score. The free <strong>AI Visibility Starter Checklist</strong> shows the fixes, in order. Tell us where to send it:</p>
+    <p><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc7ABTePxCJAtKc6AhHpSeL9cgPD3CuxyRHnztSz8cgPtbABg/viewform" target="_blank" rel="noopener">Email me the free Starter Checklist</a>
+    &nbsp;<a class="btn secondary" href="checklist.html">Read the checklist online</a></p>
+    <h2>Want the full audit done for you?</h2>
+    <p>The free check covers seven signals. The full <strong>AI Visibility Audit ($147)</strong> covers your whole presence — every page, every major AI engine, your listings and reviews — and hands you a fixed-for-you priority plan.</p>
+    <p><a class="btn" href="https://buy.stripe.com/28E6oI6F8eg74Ka1Mg0gw0h" target="_blank" rel="noopener">Get the full AI Visibility Audit — $147</a></p>
+  </div>
+
+  <h2>What this checks</h2>
+  <p>AI search engines read your site differently from people. This tool checks whether your site is reachable, whether it has an <em>llms.txt</em> file (the signpost AI crawlers look for), whether your pages describe themselves clearly (title, description, headings), whether structured data helps AI understand your business, and whether your robots.txt accidentally blocks AI crawlers.</p>
+
+  <footer>
+    <p>C2R Marketing · 10701 College Ave, Kansas City, MO 64137-1742 · Questions: eli@c2rmarketing.com</p>
+    <p>This tool was built and is operated by the C2R Marketing AI team. Results are a free mini-check of the signals listed above, not a guarantee of rankings or revenue.</p>
+  </footer>
+</div>
+
+<script>
+const CHECKS = [
+  {id:'reachable', name:'Site reachable',        fix:'Your site did not return readable content. Check that the address is right and the site is live.'},
+  {id:'llmstxt',   name:'llms.txt signpost',     fix:'Add an /llms.txt file — it is the signpost AI crawlers read first to understand your site.'},
+  {id:'title',     name:'Page title',            fix:'Add a clear <title> naming your business, what you do, and where you are.'},
+  {id:'metadesc',  name:'Meta description',      fix:'Add a one-sentence meta description: who you serve, what you do, where.'},
+  {id:'h1',        name:'Main heading (H1)',     fix:'Give the page one clear main heading that says what the business is.'},
+  {id:'schema',    name:'Structured data',       fix:'Add LocalBusiness structured data (JSON-LD) so AI can cite your name, address, and services accurately.'},
+  {id:'robots',    name:'AI crawlers allowed',   fix:'Your robots.txt appears to block AI crawlers (e.g. GPTBot). Allow them so AI search can read and cite you.'}
+];
+// Free reader proxy used only to fetch the site's own public pages when the browser cannot fetch them directly (CORS).
+async function fetchText(url){
+  try{ const r = await fetch(url); if(r.ok) return await r.text(); }catch(e){}
+  try{ const r = await fetch('https://r.jina.ai/' + url); if(r.ok) return await r.text(); }catch(e){}
+  return null;
+}
+function host(u){ try{ return new URL(u).origin; }catch(e){ return null; } }
+async function runCheck(){
+  const inp = document.getElementById('siteUrl');
+  let url = inp.value.trim();
+  if(!/^https?:\/\//i.test(url)) url = 'https://' + url;
+  const origin = host(url);
+  const btn = document.getElementById('runBtn');
+  const box = document.getElementById('results');
+  const list = document.getElementById('checkList');
+  if(!origin){ alert('Please enter a valid website address.'); return; }
+  btn.disabled = true; btn.textContent = 'Checking…';
+  box.style.display = 'block'; list.innerHTML = ''; document.getElementById('score').textContent = 'Running checks on ' + origin + ' …';
+
+  const results = {};
+  const home = await fetchText(url);
+  results.reachable = home ? 'pass' : 'unknown';
+
+  if(home){
+    const doc = new DOMParser().parseFromString(home, 'text/html');
+    const title = (doc.querySelector('title')||{}).textContent || '';
+    results.title = title.trim().length >= 8 ? 'pass' : 'fail';
+    const md = doc.querySelector('meta[name="description"]');
+    results.metadesc = (md && md.getAttribute('content') && md.getAttribute('content').trim().length >= 40) ? 'pass' : 'fail';
+    results.h1 = doc.querySelector('h1') ? 'pass' : 'fail';
+    results.schema = /application\/ld\+json/.test(home) ? 'pass' : 'fail';
+  } else { results.title = results.metadesc = results.h1 = results.schema = 'unknown'; }
+
+  const llms = await fetchText(origin + '/llms.txt');
+  results.llmstxt = llms && /^\s*#\s+\S/.test(llms) ? 'pass' : (llms ? 'fail' : 'unknown');
+
+  const robots = await fetchText(origin + '/robots.txt');
+  if(robots){
+    const blocksAI = /(user-agent:\s*(gptbot|claudebot|oai-searchbot|perplexitybot)[\s\S]{0,200}?disallow:\s*\/\s*$)/im.test(robots) || /user-agent:\s*\*[\s\S]{0,200}?disallow:\s*\/\s*$/im.test(robots);
+    results.robots = blocksAI ? 'fail' : 'pass';
+  } else results.robots = 'unknown';
+
+  let pass = 0, done = 0;
+  list.innerHTML = CHECKS.map(c => {
+    const st = results[c.id];
+    if(st !== 'unknown'){ done++; if(st === 'pass') pass++; }
+    const label = st === 'pass' ? '✓ PASS' : st === 'fail' ? '✗ FIX' : '? UNVERIFIED';
+    const cls = st === 'pass' ? 'pass' : st === 'fail' ? 'fail' : 'unk';
+    return '<div class="check"><span class="st ' + cls + '">' + label + '</span><span><strong>' + c.name + '</strong>' +
+      (st === 'fail' ? '<br><span class="fix">' + c.fix + '</span>' : '') +
+      (st === 'unknown' ? '<br><span class="fix">Couldn\'t verify this one from your browser — the full audit checks it directly.</span>' : '') +
+      '</span></div>';
+  }).join('');
+  document.getElementById('score').textContent = done
+    ? 'Your AI visibility mini-score: ' + pass + ' of ' + done + ' checks passed' + (done < CHECKS.length ? ' (' + (CHECKS.length - done) + ' couldn\'t be verified)' : '')
+    : 'We couldn\'t read your site from the browser — the full audit checks it directly.';
+  btn.disabled = false; btn.textContent = 'Run my free mini-check';
+}
+</script>
+</body>
+</html>

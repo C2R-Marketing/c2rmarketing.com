@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Hebrew Words Trainer — learn the 10 words your English Bible hides | C2R Marketing</title>
+<meta name="description" content="The Hebrew Words Trainer — learn the 10 words your English Bible hides — free Hebrew words trainer and resources from C2R Marketing.">
+<style>
+body{font-family:Georgia,'Times New Roman',serif;margin:0;background:#faf7f0;color:#221d15;line-height:1.55}
+.wrap{max-width:760px;margin:0 auto;padding:24px 18px 60px}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0}
+h2{margin-top:1.6em}
+a{color:#7a4d00}
+.card{background:#fff;border:2px solid #221d15;border-radius:12px;padding:28px;text-align:center;cursor:pointer;min-height:150px;display:flex;flex-direction:column;justify-content:center}
+.hebrew{font-size:3rem;direction:rtl}
+.translit{font-size:1.6rem;font-weight:bold}
+.pron{color:#6b5d45}
+.btn{background:#221d15;color:#fff;border:0;border-radius:8px;padding:12px 22px;font-size:1rem;cursor:pointer;margin:6px 4px}
+.btn.secondary{background:#fff;color:#221d15;border:2px solid #221d15}
+.btn.right{background:#2e7d32}.btn.wrong{background:#b71c1c}
+.row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0}
+.cta{background:#221d15;color:#f5ead2;border-radius:12px;padding:24px;margin:30px 0}
+.cta a{color:#ffd97a;font-weight:bold}
+.capture{background:#fff;border:2px dashed #7a4d00;border-radius:12px;padding:22px;margin:30px 0}
+.capture input[type=email]{width:70%;padding:11px;border:1px solid #999;border-radius:6px;font-size:1rem}
+ul.words{columns:2;padding-left:18px}
+footer{margin-top:40px;color:#6b5d45;font-size:.9rem}
+.score{font-size:1.2rem;font-weight:bold;text-align:center}
+</style></head>
+<body><div class="wrap">
+<h1>The Hebrew Words Trainer</h1>
+<p>Ten Hebrew words your English Bible hides — practiced, not just read. Flip the cards, then take the quiz until all ten stick. Free, no signup: the tool is the lesson.</p>
+<div class="row">
+<button class="btn" onclick="showMode('cards')">Flashcards</button>
+<button class="btn secondary" onclick="showMode('quiz')">Quiz me</button>
+</div>
+<div id="cards">
+<div class="card" id="card" onclick="flip()"><div class="hebrew" id="c_hebrew"></div><div class="translit" id="c_translit"></div><div class="pron" id="c_pron"></div><div id="c_back" style="display:none;margin-top:10px"></div><div style="color:#6b5d45;font-size:.85rem;margin-top:8px">tap card to flip</div></div>
+<div class="row"><button class="btn secondary" onclick="prev()">← Prev</button><span id="c_pos" style="align-self:center"></span><button class="btn" onclick="next()">Next →</button></div>
+</div>
+<div id="quiz" style="display:none">
+<p class="score" id="q_score"></p>
+<div class="card" style="cursor:default"><div style="font-size:1.1rem" id="q_prompt"></div><div class="translit" id="q_word"></div></div>
+<div class="row" id="q_opts"></div>
+<div class="row"><button class="btn" onclick="nextQ()">Next question</button></div>
+</div>
+<h2>The ten words, one page each</h2>
+<ul class="words">
+<li><a href="https://c2rmarketing.com/hebrew-trainer/elohim/">Elōhīm</a> — what does Elōhīm mean?</li><li><a href="https://c2rmarketing.com/hebrew-trainer/yehovah/">Yehōvah</a> — what does Yehōvah mean?</li><li><a href="https://c2rmarketing.com/hebrew-trainer/adonai/">Adōnai</a> — what does Adōnai mean?</li><li><a href="https://c2rmarketing.com/hebrew-trainer/roi/">Ro'i</a> — what does Ro'i mean?</li><li><a href="https://c2rmarketing.com/hebrew-trainer/noach/">Noach</a> — what does Noach mean?</li><li><a href="https://c2rmarketing.com/hebrew-trainer/shem/">Shem</a> — what does Shem mean?</li><li><a href="https://c2rmarketing.com/hebrew-trainer/yerushalayim/">Yerushalayim</a> — what does Yerushalayim mean?</li><li><a href="https://c2rmarketing.com/hebrew-trainer/yisrael/">Yisra'el</a> — what does Yisra'el mean?</li><li><a href="https://c2rmarketing.com/hebrew-trainer/tziyon/">Tziyon</a> — what does Tziyon mean?</li><li><a href="https://c2rmarketing.com/hebrew-trainer/yah/">Yah</a> — what does Yah mean?</li>
+</ul>
+<h2>Teaching these words?</h2>
+<p>Two free resources for small-group leaders, church teachers, and homeschool parents: <a href="https://c2rmarketing.com/hebrew-trainer/teach/">Teach the Ten Words to Your Small Group</a> and <a href="https://c2rmarketing.com/hebrew-trainer/lesson-plan/">a one-page lesson plan</a>. The printable pack below is built for handing out.</p>
+
+<div class="capture">
+<h2>Get the free printable pack</h2>
+<p>All ten words as printable flashcards plus a one-page worksheet for your group or family table. Tell us where to send the download link:</p>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfLFQtBfRZ2cFeFD7v4l65waQlSTm3eg06D2ViegMLpv_Rz2w/formResponse" method="post" target="hidden_iframe" onsubmit="document.getElementById('capdone').style.display='block'">
+<input type="email" name="entry.371133807" required placeholder="you@example.com" aria-label="Email address">
+<button class="btn" type="submit">Send my pack</button>
+</form>
+<p id="capdone" style="display:none"><strong>Recorded — check your inbox for the download link.</strong></p>
+<iframe name="hidden_iframe" style="display:none"></iframe>
+<p style="font-size:.9rem">Prefer a form page? <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLFQtBfRZ2cFeFD7v4l65waQlSTm3eg06D2ViegMLpv_Rz2w/viewform">Open the signup form</a>. No spam — the pack link and nothing you didn't ask for.</p>
+</div>
+
+
+<div class="cta">
+<h2 style="margin-top:0">Go deeper: the full guide</h2>
+<p>The trainer teaches you to <em>recognize</em> the ten words. The guide — <strong>10 Hebrew Words Your English Bible Hides</strong> ($14, one time) — walks through each one: what English Bibles print, what is hidden, a verbatim NMV verse, and the translation choice behind it, plus the bracket-decoder and three comparison exercises.</p>
+<p><a href="https://c2r-marketing.github.io/hebrew-words-guide/">Get the guide — $14</a></p>
+</div>
+
+<script>
+const WORDS=[{"translit": "El\u014dh\u012bm", "hebrew": "\u05d0\u05b1\u05dc\u05b9\u05d4\u05b4\u05d9\u05dd", "pron": "el-oh-HEEM", "prints": "\"God\"", "hidden": "the Many Powered", "slug": "elohim"}, {"translit": "Yeh\u014dvah", "hebrew": "\u05d9\u05b0\u05d4\u05b9\u05d5\u05b8\u05d4", "pron": "yeh-ho-VAH", "prints": "\"LORD\" (in small capitals)", "hidden": "the Name behind the title", "slug": "yehovah"}, {"translit": "Ad\u014dnai", "hebrew": "\u05d0\u05b2\u05d3\u05b9\u05e0\u05b8\u05d9", "pron": "ah-doh-NYE", "prints": "\"Lord\"", "hidden": "the Father's voice", "slug": "adonai"}, {"translit": "Ro'i", "hebrew": "\u05e8\u05b9\u05e2\u05b4\u05d9", "pron": "roh-EE", "prints": "\"my shepherd\"", "hidden": "Psalm 23's pairing", "slug": "roi"}, {"translit": "Noach", "hebrew": "\u05e0\u05b9\u05d7\u05b7", "pron": "NOH-akh", "prints": "\"Noah\"", "hidden": "rest, consolation", "slug": "noach"}, {"translit": "Shem", "hebrew": "\u05e9\u05b5\u05c1\u05dd", "pron": "SHEM", "prints": "\"Shem\"", "hidden": "name, great reputation", "slug": "shem"}, {"translit": "Yerushalayim", "hebrew": "\u05d9\u05b0\u05e8\u05d5\u05bc\u05e9\u05b8\u05c1\u05dc\u05b7\u05d9\u05b4\u05dd", "pron": "yeh-roo-shah-LYE-eem", "prints": "\"Jerusalem\"", "hidden": "foundation of peace", "slug": "yerushalayim"}, {"translit": "Yisra'el", "hebrew": "\u05d9\u05b4\u05e9\u05b0\u05c2\u05e8\u05b8\u05d0\u05b5\u05dc", "pron": "yis-rah-EL", "prints": "\"Israel\"", "hidden": "he holds onto the heel", "slug": "yisrael"}, {"translit": "Tziyon", "hebrew": "\u05e6\u05b4\u05d9\u05bc\u05d5\u05b9\u05df", "pron": "tsee-YOHN", "prints": "\"Zion\"", "hidden": "parched place", "slug": "tziyon"}, {"translit": "Yah", "hebrew": "\u05d9\u05b8\u05d4\u05bc", "pron": "YAH", "prints": "hidden inside \"Hallelujah\"", "hidden": "the shortened form of the Name", "slug": "yah"}];
+let i=0, flipped=false;
+function render(){const w=WORDS[i];document.getElementById('c_hebrew').textContent=w.hebrew;document.getElementById('c_translit').textContent=w.translit;document.getElementById('c_pron').textContent='say: '+w.pron;document.getElementById('c_back').style.display=flipped?'block':'none';document.getElementById('c_back').innerHTML='English prints '+w.prints+'<br><strong>Hidden: '+w.hidden+'</strong>';document.getElementById('c_pos').textContent=(i+1)+' / '+WORDS.length;}
+function flip(){flipped=!flipped;render();}
+function next(){i=(i+1)%WORDS.length;flipped=false;render();}
+function prev(){i=(i+WORDS.length-1)%WORDS.length;flipped=false;render();}
+let qi=0, score=0, answered=false;
+function showMode(m){document.getElementById('cards').style.display=m==='cards'?'block':'none';document.getElementById('quiz').style.display=m==='quiz'?'block':'none';if(m==='quiz'){qi=0;score=0;renderQ();}}
+function renderQ(){answered=false;const w=WORDS[qi%WORDS.length];document.getElementById('q_score').textContent='Score: '+score+' / '+(qi);document.getElementById('q_prompt').textContent='What does English print for this word — and what is hidden?';document.getElementById('q_word').textContent=w.translit+' ('+w.hebrew+')';let opts=[w];while(opts.length<4){const c=WORDS[Math.floor(Math.random()*WORDS.length)];if(!opts.includes(c))opts.push(c);}opts.sort(()=>Math.random()-.5);document.getElementById('q_opts').innerHTML=opts.map(o=>'<button class="btn secondary" onclick="answer(this,'+(o===w)+')">'+o.prints.replace(/"/g,'')+' — '+o.hidden+'</button>').join('');}
+function answer(el,ok){if(answered)return;answered=true;el.className='btn '+(ok?'right':'wrong');if(ok)score++;document.getElementById('q_score').textContent='Score: '+score+' / '+(qi+1);}
+function nextQ(){qi++;if(qi>=WORDS.length){document.getElementById('q_score').textContent='Done! Final score: '+score+' / '+WORDS.length+(score===WORDS.length?' — perfect. The guide goes deeper: link below.':' — run it again, or open the word pages above.');qi=0;score=0;return;}renderQ();}
+render();
+</script>
+
+<footer>Published by C2R Marketing · <a href="https://c2rmarketing.com/hebrew-trainer/">Hebrew Words Trainer</a> · The full guide: <a href="https://c2r-marketing.github.io/hebrew-words-guide/">10 Hebrew Words Your English Bible Hides</a></footer>
+</div></body></html>
